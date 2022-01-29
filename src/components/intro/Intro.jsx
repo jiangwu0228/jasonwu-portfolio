@@ -1,9 +1,10 @@
 import React from 'react';
+import "./intro.scss"
 
 const Intro = () => {
     return (
-        <div>
-            intro
+        <div className='intro'>
+            <h1>Intro!</h1>
         </div>
     );
 }

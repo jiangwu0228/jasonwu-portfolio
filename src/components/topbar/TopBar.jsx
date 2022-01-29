@@ -4,7 +4,7 @@ import './topbar.scss';
 const TopBar = () => {
     return (
         <div className='topbar'>
-            topbar
+            
         </div>
     );
 }
