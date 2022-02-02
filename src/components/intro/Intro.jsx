@@ -20,7 +20,7 @@ const Intro = () => {
     });
   }, []);
   return (
-    <div className={"intro " + (darkTheme && 'dark')} id="intro">
+    <div className={"intro " + (darkTheme && "dark")} id="intro">
       <div className="left">
         <div className="imgContainer">
           <img src="assets/man.png" alt="man" />
@@ -34,9 +34,27 @@ const Intro = () => {
             Freelance <span ref={textRef}></span>
           </h3>
         </div>
-        <a href="#portfolio">
+        <div className="skill">
+          <h1>Key Technical Skills</h1>
+          <div className="skillCol">
+            <img src="assets/html.png" alt="" />
+            <img src="assets/css-3.png" alt="" />
+            <img src="assets/js.png" alt="" />
+          </div>
+          <div className="skillCol">
+            <img src="assets/typescript.png" alt="" />
+            <img src="assets/sass.png" alt="" />
+            <img src="assets/js.png" alt="" />
+          </div>
+          <div className="skillCol">
+            <img src="assets/typescript.png" alt="" />
+            <img src="assets/sass.png" alt="" />
+            <img src="assets/js.png" alt="" />
+          </div>
+        </div>
+        {/* <a href="#portfolio">
           <img src="assets/down.png" alt="" />
-        </a>
+        </a> */}
       </div>
     </div>
   );

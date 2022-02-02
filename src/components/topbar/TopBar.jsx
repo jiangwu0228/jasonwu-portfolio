@@ -9,7 +9,6 @@ const TopBar = ({ menuOpen, setMenuOpen }) => {
   const handleClick = () => {
     theme.dispatch({ type: "TOGGLE" });
   };
-  console.log(darkTheme);
   return (
     <div className={"topbar " + (darkTheme && "dark")}>
       <div className={"wrapper " + (menuOpen && "active")}>
@@ -27,6 +26,10 @@ const TopBar = ({ menuOpen, setMenuOpen }) => {
           </div>
         </div>
         <div className="right">
+          <div className="link">
+            <img src="assets/linkedin.png" alt="" />
+            <img src="assets/github.png" alt="" />
+          </div>
           <div className="toggle">
             {theme.state.darkTheme ? (
               <img src="assets/brightness.svg" alt="" onClick={handleClick} />

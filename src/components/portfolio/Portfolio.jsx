@@ -40,7 +40,7 @@ const Portfolio = () => {
 
   return (
     <div className={"portfolio " + (darkTheme && 'dark')} id="portfolio">
-      <h1>Portfolio</h1>
+      <h1>Project</h1>
       <ul>
         {skillCategory.map((item) => {
           return (

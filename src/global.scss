@@ -13,3 +13,12 @@ $width: 768px;
     @content;
   }
 }
+
+$mid-width: 896px;
+
+@mixin mid-width {
+  @media (max-width: $mid-width) {
+    @content;
+  }
+}
+

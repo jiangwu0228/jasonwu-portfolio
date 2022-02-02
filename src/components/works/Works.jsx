@@ -17,6 +17,7 @@ const Works = () => {
 
   return (
     <div className={"works " + (darkTheme && "dark")} id="works">
+      <h1>work</h1>
       <div
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}

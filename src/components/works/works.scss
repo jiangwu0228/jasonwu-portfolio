@@ -7,6 +7,16 @@
   justify-content: center;
   position: relative;
 
+  h1 {
+    position: absolute;
+    top: 10px;
+    font-size: 50px;
+    
+    @include mobile {
+      font-size: 30px;
+    }
+  }
+
   .arrow {
     height: 70px;
     position: absolute;
@@ -35,7 +45,7 @@
     transition: all 0.5s ease;
 
     @include mobile {
-      height: 100vh;
+      height: 80vh;
       flex-direction: column;
       justify-content: center;
     }
@@ -57,7 +67,7 @@
 
         @include mobile {
           width: 80%;
-          height: 25vh;
+          height: 22vh;
           margin: 15px 0;
         }
 
@@ -139,11 +149,11 @@
     }
   }
   &.dark {
-    background-color: #980F5A;
+    background-color: #980f5a;
     color: $darkFont;
-    .slider{
-      .container{
-        .item{
+    .slider {
+      .container {
+        .item {
           background-color: $darkColor;
         }
       }
