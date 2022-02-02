@@ -1,4 +1,4 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .intro {
   background-color: white;
@@ -27,7 +27,7 @@
       justify-content: center;
       float: right;
 
-      @include mobile{
+      @include mobile {
         align-items: flex-start;
       }
     }
@@ -35,7 +35,7 @@
     img {
       height: 90%;
 
-      @include mobile{
+      @include mobile {
         position: absolute;
         bottom: 0;
       }
@@ -54,7 +54,7 @@
       flex-direction: column;
       justify-content: center;
 
-      @include mobile{
+      @include mobile {
         padding-left: 0;
         align-items: center;
       }
@@ -63,7 +63,7 @@
         font-size: 60px;
         margin: 10px;
 
-        @include mobile{
+        @include mobile {
           font-size: 40px;
         }
       }
@@ -74,12 +74,12 @@
 
       h3 {
         font-size: 30px;
-        
-        @include mobile{
+
+        @include mobile {
           font-size: 20px;
         }
 
-        span{
+        span {
           font-size: inherit;
           color: crimson;
         }
@@ -100,13 +100,13 @@
         }
       }
     }
-    a{
+    a {
       position: absolute;
       bottom: 10px;
       width: $width;
-      left: 40%;
+      left: 45%;
 
-      img{
+      img {
         width: 30px;
         animation: arrowBlink 2s infinite;
       }

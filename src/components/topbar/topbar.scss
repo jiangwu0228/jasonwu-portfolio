@@ -10,14 +10,11 @@
   z-index: 3;
   transition: all 0.3s ease-in-out;
 
-
   .wrapper {
     padding: 10px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-
 
     .left {
       display: flex;
@@ -45,7 +42,7 @@
         align-items: center;
         margin-left: 20px;
 
-        @include mobile{
+        @include mobile {
           font-size: 20px;
           margin-left: 0;
         }

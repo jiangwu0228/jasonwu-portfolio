@@ -6,10 +6,14 @@ const Intro = () => {
   const textRef = useRef();
   useEffect(() => {
     init(textRef.current, {
-        showCursor: true,
-        backDelay: 1000,
-        backSpeed: 50,
-        strings: ["Frontend Developer", "Backend Developer", "Fullstack Developer"],
+      showCursor: true,
+      backDelay: 1000,
+      backSpeed: 50,
+      strings: [
+        "Frontend Developer",
+        "Backend Developer",
+        "Fullstack Developer",
+      ],
     });
   }, []);
   return (

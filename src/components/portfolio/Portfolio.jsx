@@ -45,6 +45,7 @@ const Portfolio = () => {
               className={
                 selected === item.id ? "portfolioList active" : "portfolioList"
               }
+              key={item.id}
               onClick={() => setSelected(item.id)}
             >
               {item.title}
@@ -55,7 +56,7 @@ const Portfolio = () => {
       <div className="container">
         {data.map((item) => {
           return (
-            <div className="item">
+            <div className="item" key={item.title}>
               <img src={item.img} alt="" />
               <h3>{item.title}</h3>
             </div>

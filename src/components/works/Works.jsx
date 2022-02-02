@@ -11,7 +11,7 @@ const Works = () => {
           currentSlide < workData.length - 1 ? currentSlide + 1 : 0
         );
   };
-  console.log(currentSlide);
+
   return (
     <div className="works" id="works">
       <div
@@ -20,7 +20,7 @@ const Works = () => {
       >
         {workData.map((data) => {
           return (
-            <div className="container">
+            <div className="container" key={data.id}>
               <div className="item">
                 <div className="left">
                   <div className="leftContainer">
@@ -33,10 +33,7 @@ const Works = () => {
                   </div>
                 </div>
                 <div className="right">
-                  <img
-                    src={data.img}
-                    alt=""
-                  />
+                  <img src={data.img} alt="" />
                 </div>
               </div>
             </div>
