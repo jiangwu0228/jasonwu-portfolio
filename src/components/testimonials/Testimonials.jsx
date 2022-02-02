@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./testimonials.scss";
 import { testimonialsData } from "../../lib/dataList";
+import { ThemeContext } from "../../context";
 
 const Testimonials = () => {
+  const theme = useContext(ThemeContext);
+  const darkTheme = theme.state.darkTheme;
   return (
-    <div className="testimonials" id="testimonials">
+    <div className={"testimonials " + (darkTheme && "dark")} id="testimonials">
       <h1>Testimonials</h1>
       <div className="container">
         {testimonialsData.map((testimonial) => (

@@ -3,6 +3,7 @@
 .intro {
   background-color: white;
   display: flex;
+  transition: all 0.3s ease-in-out;
 
   @include mobile {
     flex-direction: column;
@@ -114,6 +115,16 @@
         100% {
           opacity: 0;
         }
+      }
+    }
+  }
+
+  &.dark {
+    background-color: $darkColor;
+    color: $darkFont;
+    .left {
+      .imgContainer {
+        background-color: #980f5a;
       }
     }
   }

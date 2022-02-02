@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 
 import TopBar from "./components/topbar/TopBar";
 import Intro from "./components/intro/Intro";
@@ -12,6 +12,7 @@ import "./app.scss";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className="app">
       <TopBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />

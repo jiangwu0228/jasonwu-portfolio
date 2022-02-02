@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./topbar.scss";
 import { Person, Mail } from "@material-ui/icons";
+import { ThemeContext } from "../../context";
 
 const TopBar = ({ menuOpen, setMenuOpen }) => {
+  const theme = useContext(ThemeContext);
+  const darkTheme = theme.state.darkTheme;
+  const handleClick = () => {
+    theme.dispatch({ type: "TOGGLE" });
+  };
+  console.log(darkTheme);
   return (
-    <div className={"topbar " + (menuOpen && "active")}>
-      <div className="wrapper">
+    <div className={"topbar " + (darkTheme && "dark")}>
+      <div className={"wrapper " + (menuOpen && "active")}>
         <div className="left">
           <a href="#intro" className="logo">
             Jason Wu
@@ -20,6 +27,13 @@ const TopBar = ({ menuOpen, setMenuOpen }) => {
           </div>
         </div>
         <div className="right">
+          <div className="toggle">
+            {theme.state.darkTheme ? (
+              <img src="assets/brightness.svg" alt="" onClick={handleClick} />
+            ) : (
+              <img src="assets/moon.svg" alt="" onClick={handleClick} />
+            )}
+          </div>
           <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
             <span className="line1"></span>
             <span className="line2"></span>

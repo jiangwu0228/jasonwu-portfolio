@@ -1,8 +1,11 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useContext } from "react";
 import "./intro.scss";
 import { init } from "ityped";
+import { ThemeContext } from "../../context";
 
 const Intro = () => {
+  const theme = useContext(ThemeContext);
+  const darkTheme = theme.state.darkTheme;
   const textRef = useRef();
   useEffect(() => {
     init(textRef.current, {
@@ -17,7 +20,7 @@ const Intro = () => {
     });
   }, []);
   return (
-    <div className="intro" id="intro">
+    <div className={"intro " + (darkTheme && 'dark')} id="intro">
       <div className="left">
         <div className="imgContainer">
           <img src="assets/man.png" alt="man" />

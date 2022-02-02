@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import "./portfolio.scss";
 import {
   skillCategory,
@@ -8,8 +8,11 @@ import {
   designPortfolio,
   contentPortfolio,
 } from "../../lib/dataList";
+import { ThemeContext } from "../../context";
 
 const Portfolio = () => {
+  const theme = useContext(ThemeContext);
+  const darkTheme = theme.state.darkTheme;
   const [selected, setSelected] = useState("featured");
   const [data, setData] = useState([]);
 
@@ -36,7 +39,7 @@ const Portfolio = () => {
   }, [selected]);
 
   return (
-    <div className="portfolio" id="portfolio">
+    <div className={"portfolio " + (darkTheme && 'dark')} id="portfolio">
       <h1>Portfolio</h1>
       <ul>
         {skillCategory.map((item) => {

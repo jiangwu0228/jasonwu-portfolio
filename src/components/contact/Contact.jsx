@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "./contact.scss";
+import { ThemeContext } from "../../context";
 
 const Contact = () => {
   const [message, setMessage] = useState(false);
+  const theme = useContext(ThemeContext);
+  const darkTheme = theme.state.darkTheme;
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -10,7 +13,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact" id="contact">
+    <div className={"contact " + (darkTheme && "dark")} id="contact">
       <div className="left">
         <img src="assets/shake.svg" alt="" />
       </div>

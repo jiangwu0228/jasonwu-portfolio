@@ -3,6 +3,7 @@
 .contact {
   background-color: white;
   display: flex;
+  transition: all 0.3s ease-in-out;
 
   @include mobile {
     flex-direction: column;
@@ -73,5 +74,9 @@
         color: green;
       }
     }
+  }
+  &.dark {
+    background-color: $darkColor;
+    color: $darkFont;
   }
 }

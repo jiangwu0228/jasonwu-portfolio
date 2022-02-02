@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "./works.scss";
 import { workData } from "../../lib/dataList";
+import { ThemeContext } from "../../context";
 
 const Works = () => {
+  const theme = useContext(ThemeContext);
+  const darkTheme = theme.state.darkTheme;
   const [currentSlide, setCurrentSlide] = useState(0);
   const handleClick = (e) => {
     e === "left"
@@ -13,7 +16,7 @@ const Works = () => {
   };
 
   return (
-    <div className="works" id="works">
+    <div className={"works " + (darkTheme && "dark")} id="works">
       <div
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
