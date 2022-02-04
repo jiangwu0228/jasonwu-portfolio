@@ -8,10 +8,46 @@
   transition: all 0.3s ease-in-out;
 
   h1 {
-    font-size: 50px;
+    font-size: 45px;
 
     @include mobile {
       font-size: 30px;
+    }
+  }
+
+  .ant-tabs {
+    .ant-tabs-content-holder {
+      width: 80vw;
+      // overflow: hidden;
+      height: 75vh;
+      .ant-tabs-content {
+        .ant-tabs-tabpane {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          .ant-card {
+            width: 360px;
+            $width: 360px;
+            height: calc($width * 0.97);
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 10px;
+            // border: 1px solid #808080;
+            box-shadow: 10px 10px 10px #00000080;
+          
+
+            @include mobile {
+              height: 350px;
+
+            }
+
+            &.active {
+              background-color: $mainColor;
+              color: white;
+            }
+          }
+        }
+      }
     }
   }
 

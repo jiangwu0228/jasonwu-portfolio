@@ -13,7 +13,7 @@ import { ThemeContext } from "../../context";
 
 import { Tabs } from "antd";
 
-import ProjectCard from './projectcard/ProjectCard';
+import ProjectCard from "./projectcard/ProjectCard";
 
 const { TabPane } = Tabs;
 
@@ -92,10 +92,34 @@ const Portfolio = () => {
           })}
         </TabPane>
         <TabPane tab="Project" key="2">
-          Content of Tab Pane 2
+          {portFolioData.map((item) => {
+            return (
+              item.tag === "Project" && (
+                <ProjectCard
+                  key={item.id}
+                  cover={item.img}
+                  icon={item.icon}
+                  title={item.title}
+                  shortDesc={item.shortDesc}
+                />
+              )
+            );
+          })}
         </TabPane>
         <TabPane tab="Demo" key="3">
-          Content of Tab Pane 3
+        {portFolioData.map((item) => {
+            return (
+              item.tag === "Demo" && (
+                <ProjectCard
+                  key={item.id}
+                  cover={item.img}
+                  icon={item.icon}
+                  title={item.title}
+                  shortDesc={item.shortDesc}
+                />
+              )
+            );
+          })}
         </TabPane>
       </Tabs>
     </div>

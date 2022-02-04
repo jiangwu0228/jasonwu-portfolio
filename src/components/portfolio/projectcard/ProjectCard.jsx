@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, Avatar } from "antd";
-import "./projectCard.scss";
+// import "./projectCard.scss";
 
 const { Meta } = Card;
 

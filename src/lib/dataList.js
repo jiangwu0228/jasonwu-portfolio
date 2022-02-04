@@ -301,7 +301,6 @@ export const portFolioData = [
     icon: "https://i.ibb.co/YLnvyMT/nextjs.png",
     url: "https://realestate-nine-chi.vercel.app/",
     tag: "Project",
-
   },
   {
     id: 7,
@@ -322,7 +321,6 @@ export const portFolioData = [
     icon: "https://i.ibb.co/YLnvyMT/nextjs.png",
     url: "https://www.happynzfacepiant.com/",
     tag: "Demo",
-
   },
   {
     id: 9,
