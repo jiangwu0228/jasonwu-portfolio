@@ -23,7 +23,7 @@ const Intro = () => {
     <div className={"intro " + (darkTheme && "dark")} id="intro">
       <div className="left">
         <div className="imgContainer">
-          <img src="assets/man.png" alt="man" />
+          <img src="https://i.ibb.co/YT0w0JQ/man.png" alt="man" />
         </div>
       </div>
       <div className="right">

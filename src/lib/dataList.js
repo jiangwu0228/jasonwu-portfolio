@@ -1,3 +1,5 @@
+import { Description } from "@material-ui/icons";
+
 export const skillCategory = [
   {
     id: "featured",
@@ -235,5 +237,101 @@ export const testimonialsData = [
     img: "https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
     icon: "assets/linkedin.png",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem",
+  },
+];
+
+export const portFolioData = [
+  {
+    id: 1,
+    title: "Portfolio Web Design",
+    shortDesc: "this is a portfolio website",
+    description:
+      "this is a portfolio website this is a portfolio websitethis is a portfolio website",
+    img: "https://i.ibb.co/g3hz5fR/The-School-Uniform-01-ef9c861063.jpg",
+    icon: "https://i.ibb.co/HdjCd9w/sass.png",
+    url: "https://realestate-nine-chi.vercel.app/",
+    tag: "Project",
+  },
+  {
+    id: 2,
+    title: "CMS",
+    shortDesc: "this is a portfolio website",
+    description: "this is a CMS",
+    img: "https://i.ibb.co/W0S3Z37/01-prosonal-web-2020-e27946c0f6.jpg",
+    icon: "https://i.ibb.co/YLnvyMT/nextjs.png",
+    url: "https://wu-cms.vercel.app/",
+    tag: "Project",
+  },
+  {
+    id: 3,
+    title: "Crogle",
+    shortDesc: "this is a portfolio website",
+    description: "this is a google search copy",
+    img: "https://i.ibb.co/g3hz5fR/The-School-Uniform-01-ef9c861063.jpg",
+    icon: "https://i.ibb.co/HdjCd9w/sass.png",
+    url: "https://crogle.netlify.app/",
+    tag: "Project",
+  },
+  {
+    id: 4,
+    title: "RealEstate",
+    shortDesc: "this is a portfolio website",
+    description: "this is a RealEstate website",
+    img: "https://i.ibb.co/W0S3Z37/01-prosonal-web-2020-e27946c0f6.jpg",
+    icon: "https://i.ibb.co/YLnvyMT/nextjs.png",
+    url: "https://realestate-nine-chi.vercel.app/",
+    tag: "Project",
+  },
+  {
+    id: 5,
+    title: "Cryptocurrency",
+    shortDesc: "this is a portfolio website",
+    description: "this is a Cryptocurrency website",
+    img: "https://i.ibb.co/g3hz5fR/The-School-Uniform-01-ef9c861063.jpg",
+    icon: "https://i.ibb.co/HdjCd9w/sass.png",
+    url: "https://cryptocurrency-iota.vercel.app/",
+    tag: "Project",
+  },
+  {
+    id: 6,
+    title: "Travel Advisor",
+    shortDesc: "this is a portfolio website",
+    description: "this is a Travel Advisor website",
+    img: "https://i.ibb.co/W0S3Z37/01-prosonal-web-2020-e27946c0f6.jpg",
+    icon: "https://i.ibb.co/YLnvyMT/nextjs.png",
+    url: "https://realestate-nine-chi.vercel.app/",
+    tag: "Project",
+
+  },
+  {
+    id: 7,
+    title: "restaurant cart",
+    shortDesc: "this is a portfolio website",
+    description: "this is a restaurant cart website",
+    img: "https://i.ibb.co/g3hz5fR/The-School-Uniform-01-ef9c861063.jpg",
+    icon: "https://i.ibb.co/HdjCd9w/sass.png",
+    url: "https://www.happyfacepaint.com/",
+    tag: "Demo",
+  },
+  {
+    id: 8,
+    title: "Honkai Impact demo",
+    shortDesc: "this is a portfolio website",
+    description: "this is a game characters website",
+    img: "https://i.ibb.co/W0S3Z37/01-prosonal-web-2020-e27946c0f6.jpg",
+    icon: "https://i.ibb.co/YLnvyMT/nextjs.png",
+    url: "https://www.happynzfacepiant.com/",
+    tag: "Demo",
+
+  },
+  {
+    id: 9,
+    title: "Firebase auth demo",
+    shortDesc: "this is a portfolio website",
+    description: "this is a Firebase auth demo website",
+    img: "https://i.ibb.co/g3hz5fR/The-School-Uniform-01-ef9c861063.jpg",
+    icon: "https://i.ibb.co/HdjCd9w/sass.png",
+    url: "https://react-authtication-firebase.vercel.app/",
+    tag: "Demo",
   },
 ];

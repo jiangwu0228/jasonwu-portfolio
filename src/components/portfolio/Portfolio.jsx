@@ -7,8 +7,15 @@ import {
   mobilePortfolio,
   designPortfolio,
   contentPortfolio,
+  portFolioData,
 } from "../../lib/dataList";
 import { ThemeContext } from "../../context";
+
+import { Tabs } from "antd";
+
+import ProjectCard from './projectcard/ProjectCard';
+
+const { TabPane } = Tabs;
 
 const Portfolio = () => {
   const theme = useContext(ThemeContext);
@@ -38,10 +45,14 @@ const Portfolio = () => {
     }
   }, [selected]);
 
+  function callback(key) {
+    console.log(key);
+  }
+
   return (
-    <div className={"portfolio " + (darkTheme && 'dark')} id="portfolio">
+    <div className={"portfolio " + (darkTheme && "dark")} id="portfolio">
       <h1>Project</h1>
-      <ul>
+      {/* <ul>
         {skillCategory.map((item) => {
           return (
             <li
@@ -52,7 +63,7 @@ const Portfolio = () => {
               onClick={() => setSelected(item.id)}
             >
               {item.title}
-            </li>
+            </li>  
           );
         })}
       </ul>
@@ -65,7 +76,28 @@ const Portfolio = () => {
             </div>
           );
         })}
-      </div>
+      </div> */}
+      <Tabs defaultActiveKey="1" onChange={callback}>
+        <TabPane tab="All" key="1">
+          {portFolioData.map((item) => {
+            return (
+              <ProjectCard
+                key={item.id}
+                cover={item.img}
+                icon={item.icon}
+                title={item.title}
+                shortDesc={item.shortDesc}
+              />
+            );
+          })}
+        </TabPane>
+        <TabPane tab="Project" key="2">
+          Content of Tab Pane 2
+        </TabPane>
+        <TabPane tab="Demo" key="3">
+          Content of Tab Pane 3
+        </TabPane>
+      </Tabs>
     </div>
   );
 };
