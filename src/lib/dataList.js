@@ -2,24 +2,16 @@ import { Description } from "@material-ui/icons";
 
 export const skillCategory = [
   {
-    id: "featured",
-    title: "Featured",
+    id: "all",
+    title: "All",
   },
   {
-    id: "web",
-    title: "Web App",
+    id: "project",
+    title: "Project",
   },
   {
-    id: "mobile",
-    title: "Mobile App",
-  },
-  {
-    id: "design",
-    title: "Design",
-  },
-  {
-    id: "content",
-    title: "Content",
+    id: "demo",
+    title: "Demo",
   },
 ];
 

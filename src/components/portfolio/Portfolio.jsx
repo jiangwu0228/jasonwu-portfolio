@@ -1,58 +1,40 @@
 import React, { useState, useEffect, useContext } from "react";
 import "./portfolio.scss";
-import {
-  skillCategory,
-  featuredPortfolio,
-  webPortfolio,
-  mobilePortfolio,
-  designPortfolio,
-  contentPortfolio,
-  portFolioData,
-} from "../../lib/dataList";
+import { skillCategory, portFolioData } from "../../lib/dataList";
 import { ThemeContext } from "../../context";
-
-import { Tabs } from "antd";
-
-import ProjectCard from "./projectcard/ProjectCard";
-
-const { TabPane } = Tabs;
+import PortfolioModal from "./portfoliomodal/PortfolioModal";
 
 const Portfolio = () => {
   const theme = useContext(ThemeContext);
   const darkTheme = theme.state.darkTheme;
-  const [selected, setSelected] = useState("featured");
+  const [selected, setSelected] = useState("all");
   const [data, setData] = useState([]);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     switch (selected) {
-      case "featured":
-        setData(featuredPortfolio);
+      case "all":
+        setData(portFolioData);
         break;
-      case "web":
-        setData(webPortfolio);
+      case "project":
+        setData(portFolioData.filter((item) => item.tag === "Project"));
         break;
-      case "mobile":
-        setData(mobilePortfolio);
-        break;
-      case "design":
-        setData(designPortfolio);
-        break;
-      case "content":
-        setData(contentPortfolio);
+      case "demo":
+        setData(portFolioData.filter((item) => item.tag === "Demo"));
         break;
       default:
-        setData(featuredPortfolio);
+        setData(portFolioData);
     }
   }, [selected]);
 
-  function callback(key) {
-    console.log(key);
-  }
+  const openModal = (item, open, setOpen) => {
+    return <PortfolioModal item={item} open={open} setOpen={setOpen} />;
+  };
 
   return (
     <div className={"portfolio " + (darkTheme && "dark")} id="portfolio">
       <h1>Project</h1>
-      {/* <ul>
+      <ul>
         {skillCategory.map((item) => {
           return (
             <li
@@ -63,65 +45,27 @@ const Portfolio = () => {
               onClick={() => setSelected(item.id)}
             >
               {item.title}
-            </li>  
+            </li>
           );
         })}
       </ul>
       <div className="container">
         {data.map((item) => {
           return (
-            <div className="item" key={item.title}>
+            <div
+              className="item"
+              key={item.title}
+              onClick={() => {
+                setOpen(true);
+                openModal(item);
+              }}
+            >
               <img src={item.img} alt="" />
               <h3>{item.title}</h3>
             </div>
           );
         })}
-      </div> */}
-      <Tabs defaultActiveKey="1" onChange={callback}>
-        <TabPane tab="All" key="1">
-          {portFolioData.map((item) => {
-            return (
-              <ProjectCard
-                key={item.id}
-                cover={item.img}
-                icon={item.icon}
-                title={item.title}
-                shortDesc={item.shortDesc}
-              />
-            );
-          })}
-        </TabPane>
-        <TabPane tab="Project" key="2">
-          {portFolioData.map((item) => {
-            return (
-              item.tag === "Project" && (
-                <ProjectCard
-                  key={item.id}
-                  cover={item.img}
-                  icon={item.icon}
-                  title={item.title}
-                  shortDesc={item.shortDesc}
-                />
-              )
-            );
-          })}
-        </TabPane>
-        <TabPane tab="Demo" key="3">
-        {portFolioData.map((item) => {
-            return (
-              item.tag === "Demo" && (
-                <ProjectCard
-                  key={item.id}
-                  cover={item.img}
-                  icon={item.icon}
-                  title={item.title}
-                  shortDesc={item.shortDesc}
-                />
-              )
-            );
-          })}
-        </TabPane>
-      </Tabs>
+      </div>
     </div>
   );
 };
