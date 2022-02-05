@@ -27,8 +27,12 @@ const TopBar = ({ menuOpen, setMenuOpen }) => {
         </div>
         <div className="right">
           <div className="link">
-            <img src="assets/linkedin.png" alt="" />
-            <img src="assets/github.png" alt="" />
+            <a href="https://www.linkedin.com/in/jiang-wu-729450222/">
+              <img src="assets/linkedin.png" alt="" />
+            </a>
+            <a href="https://github.com/jiangwu0228">
+              <img src="assets/github.png" alt="" />
+            </a>
           </div>
           <div className="toggle">
             {theme.state.darkTheme ? (

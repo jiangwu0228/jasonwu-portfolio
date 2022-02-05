@@ -236,14 +236,21 @@ export const portFolioData = [
   {
     id: 1,
     title: "Portfolio Web Design",
-    shortDesc: "this is a portfolio website",
+    shortDesc: "This is a portfolio website built with React",
     description:
-      "this is a portfolio website this is a portfolio websitethis is a portfolio website",
+      "this is my portfolio website built with React. This website is respositive ",
     img: "https://i.ibb.co/GvL7Qfd/auth.png",
     icon: "https://i.ibb.co/HdjCd9w/sass.png",
     url: "https://realestate-nine-chi.vercel.app/",
     tag: "Project",
-    tech:['React','Scss','Material-UI'],
+    tech: [
+      "React",
+      "Scss",
+      "Material-UI",
+      "react hooks",
+      "react context",
+      "npm",
+    ],
   },
   {
     id: 2,
@@ -254,6 +261,16 @@ export const portFolioData = [
     icon: "https://i.ibb.co/YLnvyMT/nextjs.png",
     url: "https://wu-cms.vercel.app/",
     tag: "Project",
+    tech: [
+      "NextJS",
+      "Ant Design",
+      "axios",
+      "cryptojs",
+      "Highcharts",
+      "lodash",
+      "styled-components",
+      "npm",
+    ],
   },
   {
     id: 3,
@@ -264,6 +281,7 @@ export const portFolioData = [
     icon: "https://i.ibb.co/HdjCd9w/sass.png",
     url: "https://crogle.netlify.app/",
     tag: "Project",
+    tech: ["react", "Tailwind css", "Rapid API", "react context", "npm"],
   },
   {
     id: 4,
@@ -274,6 +292,7 @@ export const portFolioData = [
     icon: "https://i.ibb.co/YLnvyMT/nextjs.png",
     url: "https://realestate-nine-chi.vercel.app/",
     tag: "Project",
+    tech: ["NextJS", "Charkra-UI", "millify", "axios", "Rapid API", "npm"],
   },
   {
     id: 5,
@@ -284,6 +303,17 @@ export const portFolioData = [
     icon: "https://i.ibb.co/HdjCd9w/sass.png",
     url: "https://cryptocurrency-iota.vercel.app/",
     tag: "Project",
+    tech: [
+      "React",
+      "Ant Design",
+      "Redux",
+      "Chart.js",
+      "Rapid API",
+      "axios",
+      "millify",
+      "moment",
+      "npm",
+    ],
   },
   {
     id: 6,
@@ -294,6 +324,7 @@ export const portFolioData = [
     icon: "https://i.ibb.co/YLnvyMT/nextjs.png",
     url: "https://realestate-nine-chi.vercel.app/",
     tag: "Project",
+    tech: ["React", "material-ui", "google map api", "npm", "axios", "lodash"],
   },
   {
     id: 7,
@@ -304,6 +335,7 @@ export const portFolioData = [
     icon: "https://i.ibb.co/HdjCd9w/sass.png",
     url: "https://www.happyfacepaint.com/",
     tag: "Demo",
+    tech: ["React", "Ant Design", "react-context", "npm"],
   },
   {
     id: 8,
@@ -314,6 +346,7 @@ export const portFolioData = [
     icon: "https://i.ibb.co/YLnvyMT/nextjs.png",
     url: "https://www.happynzfacepiant.com/",
     tag: "Demo",
+    tech: ["NextJS", "mongodb", "npm"],
   },
   {
     id: 9,
@@ -324,5 +357,20 @@ export const portFolioData = [
     icon: "https://i.ibb.co/HdjCd9w/sass.png",
     url: "https://react-authtication-firebase.vercel.app/",
     tag: "Demo",
+    tech: ["React", "firebase", "react-context", "npm"],
   },
 ];
+
+export const skills = [
+  'https://i.ibb.co/sJ7fxv2/html.png',
+  'https://i.ibb.co/ZcVc2cW/css-3.png',
+  'https://i.ibb.co/BfsbD88/js.png',
+  
+  'https://i.ibb.co/M70R2Nm/typescript.png',
+  'https://i.ibb.co/HdjCd9w/sass.png',
+  'https://i.ibb.co/s3BZS0z/tailwindcss.png',
+
+  'https://i.ibb.co/cLSTmH/react.png',
+  'https://i.ibb.co/YLnvyMT/nextjs.png',
+  'https://i.ibb.co/8g02fQ0/angular.png'
+]

@@ -14,8 +14,8 @@ const Intro = () => {
       backSpeed: 50,
       strings: [
         "Frontend Developer",
-        "Backend Developer",
-        "Fullstack Developer",
+        // "Backend Developer",
+        // "Fullstack Developer",
       ],
     });
   }, []);
@@ -37,24 +37,21 @@ const Intro = () => {
         <div className="skill">
           <h1>Key Technical Skills</h1>
           <div className="skillCol">
-            <img src="assets/html.png" alt="" />
-            <img src="assets/css-3.png" alt="" />
-            <img src="assets/js.png" alt="" />
+            <img src="https://i.ibb.co/sJ7fxv2/html.png" alt="" />
+            <img src="https://i.ibb.co/ZcVc2cW/css-3.png" alt="" />
+            <img src="https://i.ibb.co/BfsbD88/js.png" alt="" />
           </div>
           <div className="skillCol">
-            <img src="assets/typescript.png" alt="" />
-            <img src="assets/sass.png" alt="" />
-            <img src="assets/js.png" alt="" />
+            <img src="https://i.ibb.co/M70R2Nm/typescript.png" alt="" />
+            <img src="https://i.ibb.co/HdjCd9w/sass.png" alt="" />
+            <img src="https://i.ibb.co/s3BZS0z/tailwindcss.png" alt="" />
           </div>
           <div className="skillCol">
-            <img src="assets/typescript.png" alt="" />
-            <img src="assets/sass.png" alt="" />
-            <img src="assets/js.png" alt="" />
+            <img src="https://i.ibb.co/JcLSTmH/react.png" alt="" />
+            <img src="https://i.ibb.co/YLnvyMT/nextjs.png" alt="" />
+            <img src="https://i.ibb.co/8g02fQ0/angular.png" alt="" />
           </div>
         </div>
-        {/* <a href="#portfolio">
-          <img src="assets/down.png" alt="" />
-        </a> */}
       </div>
     </div>
   );

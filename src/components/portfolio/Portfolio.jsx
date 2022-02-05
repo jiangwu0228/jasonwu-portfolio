@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect, useContext, useRef } from "react";
 import "./portfolio.scss";
 import { skillCategory, portFolioData } from "../../lib/dataList";
 import { ThemeContext } from "../../context";
@@ -10,6 +10,14 @@ import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
 import Button from "@mui/material/Button";
 import Link from "@mui/material/Link";
+import Chip from "@mui/material/Chip";
+import Stack from "@mui/material/Stack";
+
+import Dialog from "@mui/material/Dialog";
+import DialogActions from "@mui/material/DialogActions";
+import DialogContent from "@mui/material/DialogContent";
+import DialogContentText from "@mui/material/DialogContentText";
+import DialogTitle from "@mui/material/DialogTitle";
 
 const Portfolio = () => {
   const theme = useContext(ThemeContext);
@@ -19,11 +27,24 @@ const Portfolio = () => {
   const [open, setOpen] = useState(false);
   const [current, setCurrent] = useState({});
 
+  const [scroll, setScroll] = useState("paper");
+
   const handleOpen = () => {
     setOpen(true);
+    // setScroll(scrollType);
   };
 
   const handleClose = () => setOpen(false);
+
+  const descriptionElementRef = useRef(null);
+  useEffect(() => {
+    if (open) {
+      const { current: descriptionElement } = descriptionElementRef;
+      if (descriptionElement !== null) {
+        descriptionElement.focus();
+      }
+    }
+  }, [open]);
 
   useEffect(() => {
     switch (selected) {
@@ -66,7 +87,6 @@ const Portfolio = () => {
               className="item"
               key={item.title}
               onClick={() => {
-                console.log(item);
                 handleOpen();
                 setCurrent(item);
               }}
@@ -77,50 +97,52 @@ const Portfolio = () => {
           );
         })}
       </div>
-      <Modal
-        aria-labelledby="transition-modal-title"
-        aria-describedby="transition-modal-description"
+      <Dialog
         open={open}
         onClose={handleClose}
-        closeAfterTransition
-        BackdropComponent={Backdrop}
-        BackdropProps={{
-          timeout: 500,
-        }}
+        scroll="body"
+        aria-labelledby="scroll-dialog-title"
+        aria-describedby="scroll-dialog-description"
       >
-        <Fade in={open}>
-          <Box>
-            <div className="box-container">
-              <div className="box-img">
-                <img src={current.img} alt="" />
-              </div>
-              <div className="box-section">
-                <div className="box-left">
-                  <div className="tag">tag</div>
+        <DialogContent dividers={scroll === "paper"}>
+          <DialogContentText
+            id="scroll-dialog-description"
+            ref={descriptionElementRef}
+            tabIndex={-1}
+          >
+            <Box>
+              <div className="box-container">
+                <div className="box-img">
+                  <img src={current.img} alt="" />
                 </div>
-                <div className="box-right">
-                  <h2>{current.title}</h2>
-                  <a
-                    href={current.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Link>
-                      <span>link</span>
-                      <span>{current.link}</span>
-                    </Link>
-                  </a>
-                  <p>{current.description}</p>
+                <div className="box-section">
+                  <div className="box-left">
+                    {current.tech?.map((item) => {
+                      return <Chip size="small" label={item} style={{}} />;
+                    })}
+                  </div>
+                  <div className="box-right">
+                    <h2>{current.title}</h2>
+                    <a
+                      href={current.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Link>
+                        <span>link</span>
+                      </Link>
+                    </a>
+                    <p>{current.description}</p>
+                  </div>
                 </div>
               </div>
-              <div className="box-button">
-                <Button onClick={handleClose}>Close</Button>
-              </div>
-            </div>
-          </Box>
-        </Fade>
-      </Modal>
-      {/* <PortfolioModal current={current} open={open} handleClose={()=>{handleClose}} /> */}
+            </Box>
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClose}>Close</Button>
+        </DialogActions>
+      </Dialog>
     </div>
   );
 };

@@ -83,7 +83,7 @@
       position: relative;
       transition: all 0.5s ease-in-out;
       cursor: pointer;
-      box-shadow: 5px 5px 5px #0079ba70;
+      box-shadow: 5px 5px 5px 5px #0079ba70;
 
       @include mid-width {
         width: 130px;
@@ -125,55 +125,47 @@
   }
 }
 
-.MuiModal-root {
-  .MuiBox-root {
-    position: absolute;
-    width: 80vw;
-    top: 50%;
-    $width: 80vw;
-    $fullWidth: 100vw;
-    left: calc($fullWidth / 2 - $width / 2);
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease-in-out;
-    transform: translateY(-50%);
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px #0079ba70;
+.MuiPaper-root {
+  max-width: 100% !important;
+  width: 80vw;
+}
 
-    .box-container {
-      &.dark {
-        background-color: $darkColor;
-        color: $darkFont;
-      }
-      margin: 10px;
+.box-container {
+  &.dark {
+    background-color: $darkColor;
+    color: $darkFont;
+  }
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  .box-img {
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+  }
+  .box-section {
+    display: flex;
+    flex-direction: row;
+    .box-left {
+      flex-wrap: wrap;
+      width: 30%;
       display: flex;
-      flex-direction: column;
-      .box-img {
-        img {
-          width: 100%;
-          height: 100%;
-          border-radius: 20px;
-          object-fit: cover;
-        }
+      .MuiChip-root {
+        margin: 5px;
       }
-      .box-section {
-        display: flex;
-        flex-direction: row;
-        .box-left {
-          width: 30%;
-        }
-        .box-right {
-          // display: flex;
-          // flex-direction: row;
-          width: 70%;
-        }
-      }
-      .box-button {
-        .MuiButton-root {
-          float: right;
-        }
-      }
+    }
+    .box-right {
+      // display: flex;
+      // flex-direction: row;
+      width: 70%;
+    }
+  }
+  .box-button {
+    .MuiButton-root {
+      float: right;
     }
   }
 }
