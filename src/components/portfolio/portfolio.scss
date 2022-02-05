@@ -15,42 +15,6 @@
     }
   }
 
-  .ant-tabs {
-    .ant-tabs-content-holder {
-      width: 80vw;
-      // overflow: hidden;
-      height: 75vh;
-      .ant-tabs-content {
-        .ant-tabs-tabpane {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          .ant-card {
-            width: 360px;
-            $width: 360px;
-            height: calc($width * 0.97);
-            cursor: pointer;
-            margin: 10px;
-            border-radius: 10px;
-            // border: 1px solid #808080;
-            box-shadow: 10px 10px 10px #00000080;
-          
-
-            @include mobile {
-              height: 350px;
-
-            }
-
-            &.active {
-              background-color: $mainColor;
-              color: white;
-            }
-          }
-        }
-      }
-    }
-  }
-
   ul {
     margin: 10px;
     padding: 0;
@@ -95,7 +59,7 @@
   }
 
   .container {
-    width: 70%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,13 +83,9 @@
       position: relative;
       transition: all 0.5s ease-in-out;
       cursor: pointer;
-      box-shadow: 5px 5px 5px #00000028;
+      box-shadow: 5px 5px 5px #0079ba70;
 
-      // @include mobile {
-      //   width: 260px;
-      //   height: 200px;
-      // }
-      @include mobile {
+      @include mid-width {
         width: 130px;
         height: 100px;
       }
@@ -162,5 +122,58 @@
   &.dark {
     background-color: $darkColor;
     color: $darkFont;
+  }
+}
+
+.MuiModal-root {
+  .MuiBox-root {
+    position: absolute;
+    width: 80vw;
+    top: 50%;
+    $width: 80vw;
+    $fullWidth: 100vw;
+    left: calc($fullWidth / 2 - $width / 2);
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-50%);
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #0079ba70;
+
+    .box-container {
+      &.dark {
+        background-color: $darkColor;
+        color: $darkFont;
+      }
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      .box-img {
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 20px;
+          object-fit: cover;
+        }
+      }
+      .box-section {
+        display: flex;
+        flex-direction: row;
+        .box-left {
+          width: 30%;
+        }
+        .box-right {
+          // display: flex;
+          // flex-direction: row;
+          width: 70%;
+        }
+      }
+      .box-button {
+        .MuiButton-root {
+          float: right;
+        }
+      }
+    }
   }
 }
