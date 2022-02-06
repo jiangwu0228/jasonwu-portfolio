@@ -44,12 +44,12 @@ const Intro = () => {
           <div className="skillCol">
             <img src="https://i.ibb.co/M70R2Nm/typescript.png" alt="" />
             <img src="https://i.ibb.co/HdjCd9w/sass.png" alt="" />
-            <img src="https://i.ibb.co/s3BZS0z/tailwindcss.png" alt="" />
+            <img src="https://i.ibb.co/Gn1ZxYG/tailwind.png" alt="" />
           </div>
           <div className="skillCol">
-            <img src="https://i.ibb.co/JcLSTmH/react.png" alt="" />
-            <img src="https://i.ibb.co/YLnvyMT/nextjs.png" alt="" />
-            <img src="https://i.ibb.co/8g02fQ0/angular.png" alt="" />
+            <img src="https://i.ibb.co/rft20TC/react.png" alt="" />
+            <img src="https://i.ibb.co/r4wSr0Y/nextjs.png" alt="" />
+            <img src="https://i.ibb.co/z6xP4zN/angular.png" alt="" />
           </div>
         </div>
       </div>
