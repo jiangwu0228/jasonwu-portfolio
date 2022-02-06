@@ -370,7 +370,7 @@ export const skills = [
   'https://i.ibb.co/HdjCd9w/sass.png',
   'https://i.ibb.co/s3BZS0z/tailwindcss.png',
 
-  'https://i.ibb.co/cLSTmH/react.png',
+  'https://i.ibb.co/rft20TC/react.png',
   'https://i.ibb.co/YLnvyMT/nextjs.png',
   'https://i.ibb.co/8g02fQ0/angular.png'
 ]
