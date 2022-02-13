@@ -150,9 +150,11 @@
     display: flex;
     flex-direction: row;
     .box-left {
+      margin: 10px;
       flex-wrap: wrap;
       width: 30%;
       display: flex;
+      flex-direction: column;
       .MuiChip-root {
         margin: 5px;
       }
@@ -160,6 +162,7 @@
     .box-right {
       // display: flex;
       // flex-direction: row;
+      margin: 10px;
       width: 70%;
     }
   }

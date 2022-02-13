@@ -117,22 +117,37 @@ const Portfolio = () => {
                 </div>
                 <div className="box-section">
                   <div className="box-left">
+                    <h3>Key Skills</h3>
                     {current.tech?.map((item) => {
                       return <Chip size="small" label={item} style={{}} />;
                     })}
                   </div>
                   <div className="box-right">
-                    <h2>{current.title}</h2>
                     <a
                       href={current.url}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <Link>
-                        <span>link</span>
+                        <h2>{current.title}</h2>
                       </Link>
                     </a>
-                    <p>{current.description}</p>
+                    <h3>Situation:</h3>
+                    <p>{current.situation}</p>
+                    <h3>Task:</h3>
+                    <p>{current.task}</p>
+                    <h3>Action:</h3>
+                    <ul>
+                      {current.action?.map((item, key) => {
+                        return (
+                          <li>
+                            {key + 1}. {item}
+                          </li>
+                        );
+                      })}
+                    </ul>
+                    <h3>Result:</h3>
+                    <p>{current.result}</p>
                   </div>
                 </div>
               </div>
