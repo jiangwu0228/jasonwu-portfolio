@@ -37,10 +37,10 @@ const Contact = () => {
       <div className="right">
         <h2>Contact</h2>
         <form ref={formRef} onSubmit={handleSubmit}>
-          <input type="text" placeholder="Name" name="user_name" />
-          <input type="text" placeholder="Subject" name="user_subject" />
-          <input type="text" placeholder="Email" name="user_email" />
-          <textarea placeholder="Message" name="message" />
+          <input type="text" placeholder="Name" name="user_name" required/>
+          <input type="text" placeholder="Subject" name="user_subject" required/>
+          <input type="text" placeholder="Email" name="user_email" required/>
+          <textarea placeholder="Message" name="message" required/>
           <button>Submit</button>
           {message && <p>Message sent</p>}
         </form>

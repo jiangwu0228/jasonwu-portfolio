@@ -51,11 +51,14 @@ const Portfolio = () => {
       case "all":
         setData(portFolioData);
         break;
-      case "project":
-        setData(portFolioData.filter((item) => item.tag === "Project"));
+      case "works":
+        setData(portFolioData.filter((item) => item.tag === "Works"));
         break;
-      case "demo":
-        setData(portFolioData.filter((item) => item.tag === "Demo"));
+      case "projects":
+        setData(portFolioData.filter((item) => item.tag === "Projects"));
+        break;
+      case "demos":
+        setData(portFolioData.filter((item) => item.tag === "Demos"));
         break;
       default:
         setData(portFolioData);
@@ -64,7 +67,7 @@ const Portfolio = () => {
 
   return (
     <div className={"portfolio " + (darkTheme && "dark")} id="portfolio">
-      <h1>Project</h1>
+      <h1>My Works</h1>
       <ul>
         {skillCategory.map((item) => {
           return (

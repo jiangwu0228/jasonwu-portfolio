@@ -17,8 +17,9 @@ const Works = () => {
 
   return (
     <div className={"works " + (darkTheme && "dark")} id="works">
-      <h1>work</h1>
-      <div
+      <h1>Skills</h1>
+      
+      {/* <div
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
@@ -55,7 +56,7 @@ const Works = () => {
         className="arrow right"
         alt=""
         onClick={() => handleClick()}
-      />
+      /> */}
     </div>
   );
 };

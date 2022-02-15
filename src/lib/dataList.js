@@ -6,12 +6,16 @@ export const skillCategory = [
     title: "All",
   },
   {
-    id: "project",
-    title: "Project",
+    id: "works",
+    title: "Works",
   },
   {
-    id: "demo",
-    title: "Demo",
+    id: "projects",
+    title: "Projects",
+  },
+  {
+    id: "demos",
+    title: "Demos",
   },
 ];
 
@@ -237,7 +241,85 @@ export const testimonialsData = [
 
 export const portFolioData = [
   {
-    id: 1,
+    id: 'facepainting',
+    title: "Face Painting Website",
+    shortDesc: "This is a face painting website built with React",
+    situation:
+      "There is a small business that needs a website for display and gets in touch for booking. The prototype is in process in Figma and has already bought a domain for the website.",
+    task: "There won't be a lot of data in the backend, so I can set all the data as static data. By EmailJS, customers can send messages directly to the staff email through a form on the page. Also, they need a dark theme as well. I will host this website in Vercel. ",
+    action: [
+      "UI and prototype design in Figma.",
+      "Data hosting in third party websites and start to build with React.",
+    ],
+    result:
+      "Experience in the project from scratch and it’s still in process.",
+    img: "https://i.ibb.co/GvL7Qfd/auth.png",
+    icon: "https://i.ibb.co/HdjCd9w/sass.png",
+    url: " ",
+    tag: "Works",
+    tech: [
+      "React",
+      "Scss",
+      "Material-UI",
+      "react hooks",
+      "react context",
+      "npm",
+    ],
+  },
+  {
+    id: 'gotime',
+    title: "Go Time",
+    shortDesc: "This is a clocking app built with Angular",
+    situation:
+      "The project is an application of clocking in and calculating working hours for employees. All web applications build with C# and angular. We use Bitbucket and Jira as project management.",
+    task: "This project needs an entry home page and some new features from Kanban Board.",
+    action: [
+      "I build a home page with material design.",
+      "New features build-in project Kanban such as sort, search in table etc.",
+    ],
+    result:
+      "Experience in single page builds and adding some new features in Angular projects.",
+    img: "https://i.ibb.co/GvL7Qfd/auth.png",
+    icon: "https://i.ibb.co/HdjCd9w/sass.png",
+    url: "https://www.jasonwu.me",
+    tag: "Works",
+    tech: [
+      "React",
+      "Scss",
+      "Material-UI",
+      "react hooks",
+      "react context",
+      "npm",
+    ],
+  },
+  {
+    id: 'portfolio',
+    title: "Portfolio Website",
+    shortDesc: "This is a E-commerce app built with Vue.",
+    situation:
+      "The project is a Mini Program in WeChat but needed some web page as an introduction. ",
+    task: "Use HTML, CSS and bootstrap to build a single page web app and manage product data.",
+    action: [
+      "I build a home page for projects with bootstrap.",
+      "Manage backend product data as an administrator.",
+    ],
+    result:
+      "Experience in HTML and CSS in responsive single page sites.",
+    img: "https://i.ibb.co/GvL7Qfd/auth.png",
+    icon: "https://i.ibb.co/HdjCd9w/sass.png",
+    url: "https://www.jasonwu.me",
+    tag: "Works",
+    tech: [
+      "React",
+      "Scss",
+      "Material-UI",
+      "react hooks",
+      "react context",
+      "npm",
+    ],
+  },
+  {
+    id: 'portfolio',
     title: "Portfolio Website",
     shortDesc: "This is a portfolio website built with React",
     situation:
@@ -255,7 +337,7 @@ export const portFolioData = [
     img: "https://i.ibb.co/GvL7Qfd/auth.png",
     icon: "https://i.ibb.co/HdjCd9w/sass.png",
     url: "https://www.jasonwu.me",
-    tag: "Project",
+    tag: "Projects",
     tech: [
       "React",
       "Scss",
@@ -266,7 +348,7 @@ export const portFolioData = [
     ],
   },
   {
-    id: 2,
+    id: 'cms',
     title: "CMS",
     shortDesc: "This is a School CMS website built with NextJS",
     situation:
@@ -283,7 +365,7 @@ export const portFolioData = [
     img: "https://i.ibb.co/fH0cQ6W/honkai.png",
     icon: "https://i.ibb.co/YLnvyMT/nextjs.png",
     url: "https://wu-cms.vercel.app/",
-    tag: "Project",
+    tag: "Projects",
     tech: [
       "NextJS",
       "Ant Design",
@@ -296,7 +378,7 @@ export const portFolioData = [
     ],
   },
   {
-    id: 3,
+    id: 'crogle',
     title: "Crogle",
     shortDesc: "This is a copy of google search website",
     situation: "I'm using google search API to build my search engine.",
@@ -312,11 +394,11 @@ export const portFolioData = [
     img: "https://i.ibb.co/8D7LVr4/cryoto.png",
     icon: "https://i.ibb.co/HdjCd9w/sass.png",
     url: "https://corgle.jasonwu.me/",
-    tag: "Project",
+    tag: "Projects",
     tech: ["react", "Tailwind css", "Rapid API", "react context", "npm"],
   },
   {
-    id: 4,
+    id: 'realestate',
     title: "Real Estate",
     shortDesc: "This is a real estate website built with React",
     situation:
@@ -332,11 +414,11 @@ export const portFolioData = [
     img: "https://i.ibb.co/cgcLwXv/realestate.png",
     icon: "https://i.ibb.co/YLnvyMT/nextjs.png",
     url: "https://reslestate.jasonwu.me/",
-    tag: "Project",
+    tag: "Projects",
     tech: ["NextJS", "Charkra-UI", "millify", "axios", "Rapid API", "npm"],
   },
   {
-    id: 5,
+    id: 'crypto',
     title: "Crypto",
     shortDesc: "This is a crypto website build with React",
     situation:
@@ -354,7 +436,7 @@ export const portFolioData = [
     img: "https://i.ibb.co/8D7LVr4/cryoto.png",
     icon: "https://i.ibb.co/HdjCd9w/sass.png",
     url: "https://crypto.jasonwu.me/",
-    tag: "Project",
+    tag: "Projects",
     tech: [
       "React",
       "Ant Design",
@@ -368,7 +450,7 @@ export const portFolioData = [
     ],
   },
   {
-    id: 6,
+    id: 'travel',
     title: "Travel Advisor",
     shortDesc: "This is a travel advisor website with Google Maps API",
     situation:
@@ -384,11 +466,11 @@ export const portFolioData = [
     img: "https://i.ibb.co/0947dTQ/map.png",
     icon: "https://i.ibb.co/YLnvyMT/nextjs.png",
     url: "https://travel-advisor.jasonwu.me/",
-    tag: "Project",
+    tag: "Projects",
     tech: ["React", "material-ui", "google map api", "npm", "axios", "lodash"],
   },
   {
-    id: 7,
+    id: 'restaurant',
     title: "Restaurant cart",
     shortDesc: "This is a React learning demo",
     situation:
@@ -404,11 +486,11 @@ export const portFolioData = [
     img: "https://i.ibb.co/MCG9nhk/resturant.png",
     icon: "https://i.ibb.co/HdjCd9w/sass.png",
     url: "https://food-cart.jiangwu.me/",
-    tag: "Demo",
+    tag: "Demos",
     tech: ["React", "Ant Design", "react-context", "npm"],
   },
   {
-    id: 8,
+    id: 'honkai',
     title: "Honkai Impact demo",
     shortDesc: "This is a NextJS learning project demo",
     situation:
@@ -424,11 +506,11 @@ export const portFolioData = [
     img: "https://i.ibb.co/fH0cQ6W/honkai.png",
     icon: "https://i.ibb.co/YLnvyMT/nextjs.png",
     url: "https://honkai.jiangwu.me/",
-    tag: "Demo",
+    tag: "Demos",
     tech: ["NextJS", "mongodb", "npm"],
   },
   {
-    id: 9,
+    id: 'auth',
     title: "Firebase auth demo with React",
     shortDesc: "This is a React and Firebase Learning demo",
     situation:
@@ -444,7 +526,7 @@ export const portFolioData = [
     img: "https://i.ibb.co/GvL7Qfd/auth.png",
     icon: "https://i.ibb.co/HdjCd9w/sass.png",
     url: "https://auth-demo.jiangwu.me/",
-    tag: "Demo",
+    tag: "Demos",
     tech: ["React", "Firebase", "react-context", "npm"],
   },
 ];
