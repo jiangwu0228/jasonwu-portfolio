@@ -18,7 +18,9 @@ const Testimonials = () => {
             <div className="top">
               <img src="assets/right-arrow.png" className="left" alt="" />
               <img src={testimonial.img} className="user" alt="" />
-              <img src={testimonial.icon} className="right" alt="" />
+              <a href={testimonial.url} target="_blank" rel="noopener noreferrer">
+                <img src={testimonial.icon} className="right" alt="" />
+              </a>
             </div>
             <div className="center">{testimonial.desc}</div>
             <div className="bottom">

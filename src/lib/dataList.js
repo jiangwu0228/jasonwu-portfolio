@@ -184,22 +184,22 @@ export const workData = [
   {
     id: "1",
     icon: "./assets/mobile.png",
-    title: "Web Design",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+    title: "Web Developer",
+    desc: "There is a small business that needs a website for display and gets in touch for booking. The prototype is in process in Figma and has already bought a domain for the website.",
     img: "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
   },
   {
     id: "2",
     icon: "./assets/globe.png",
-    title: "Mobile Application",
-    desc: "Lorem Ipsum is simply dummy text of the printing.",
+    title: "Web Developer",
+    desc: "The project is an application of clocking in and calculating working hours for employees. All web applications build with C# and angular. We use Bitbucket and Jira as project management. My role is to build an entry home page and some new features from Kanban Board.",
     img: "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
   },
   {
     id: "3",
     icon: "./assets/writing.png",
-    title: "Branding",
-    desc: "Lorem Ipsum is simply dummy text .",
+    title: "Web Developer",
+    desc: "The project is a Mini Program in WeChat but needed some web page as an introduction. My job is using HTML, CSS and bootstrap to build a single page web app and manage product data.",
     img: "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
   },
 ];
@@ -210,18 +210,18 @@ export const testimonialsData = [
     name: "Peter Yu",
     title: "Joiner Developer",
     url: "https://www.linkedin.com/in/jia-yu-8398861a3",
-    img: "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    img: "https://media-exp1.licdn.com/dms/image/C5603AQED1A10xVDNdQ/profile-displayphoto-shrink_800_800/0/1592102051126?e=1650499200&v=beta&t=97yX4zU4ahLmrfwl-onvtoECR_22Uz1U_L8pC765TOE",
     icon: "assets/linkedin.png",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+    desc: "He is punctual, hard-working and show initiative by seeking out solutions to problems. They are respectful of other colleagues and help others when required.",
   },
   {
     id: 2,
     name: "Alex Zheng",
-    title: "Senior Developer",
+    title: "Senior Web Developer",
     url: "https://www.linkedin.com/in/alex10168",
-    img: "https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    img: "https://media-exp1.licdn.com/dms/image/C5603AQGksyXVdo4E0w/profile-displayphoto-shrink_800_800/0/1517495950332?e=1650499200&v=beta&t=rq9uxtPHrwEQ7ew8stOB9dvsx44Rm9DOGDHL511ADtE",
     icon: "assets/linkedin.png",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ",
+    desc: "organized, thoughtful person who works well under pressure.",
     featured: true,
   },
   {
@@ -229,9 +229,9 @@ export const testimonialsData = [
     name: "Well Lin",
     title: "Senior Software Engineer",
     url: "https://www.linkedin.com/in/welllin",
-    img: "https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    img: "https://media-exp1.licdn.com/dms/image/C4E03AQE5PDtioprCzQ/profile-displayphoto-shrink_800_800/0/1517066053897?e=1650499200&v=beta&t=-LCxsa-2A_a9R5IN2DRQgJcOiRPaJlwXUahP_FUD7aE",
     icon: "assets/linkedin.png",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem",
+    desc: "He is usually the one to stay calm and think through a problem logically, even if things are a bit stressful.",
   },
 ];
 
@@ -411,7 +411,8 @@ export const portFolioData = [
     id: 8,
     title: "Honkai Impact demo",
     shortDesc: "This is a NextJS learning project demo",
-    situation: "My future is build a website practicing NextJS with server side rendering with mongoDB.",
+    situation:
+      "My future is build a website practicing NextJS with server side rendering with mongoDB.",
     task: "Build a website with NextJS router and rendering data in server side.",
     action: [
       "Fetch data in server side from mongoDB.",
@@ -460,4 +461,24 @@ export const skills = [
   "https://i.ibb.co/rft20TC/react.png",
   "https://i.ibb.co/YLnvyMT/nextjs.png",
   "https://i.ibb.co/8g02fQ0/angular.png",
+];
+
+export const skillsImg = [
+  '<img src="https://i.ibb.co/sJ7fxv2/html.png" alt="" />',
+  '<img src="https://i.ibb.co/ZcVc2cW/css-3.png" alt="" />',
+  '<img src="https://i.ibb.co/BfsbD88/js.png" alt="" />',
+  '<img src="https://i.ibb.co/M70R2Nm/typescript.png" alt="" />',
+  '<img src="https://i.ibb.co/HdjCd9w/sass.png" alt="" />',
+  '<img src="https://i.ibb.co/Gn1ZxYG/tailwind.png" alt="" />',
+  '<img src="https://i.ibb.co/rft20TC/react.png" alt="" />',
+  '<img src="https://i.ibb.co/r4wSr0Y/nextjs.png" alt="" />',
+  '<img src="https://i.ibb.co/z6xP4zN/angular.png" alt="" />',
+];
+
+export const services = [
+  "Enterprise website",
+  "E-commerce website",
+  "Responsive website",
+  "Custom development",
+  "Secondary development",
 ];

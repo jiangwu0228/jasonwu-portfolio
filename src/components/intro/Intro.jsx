@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useContext } from "react";
 import "./intro.scss";
 import { init } from "ityped";
 import { ThemeContext } from "../../context";
+import { services } from "../../lib/dataList";
 
 const Intro = () => {
   const theme = useContext(ThemeContext);
@@ -14,7 +15,7 @@ const Intro = () => {
       backSpeed: 50,
       strings: [
         "Frontend Developer",
-        // "Backend Developer",
+        "Web Developer",
         // "Fullstack Developer",
       ],
     });
@@ -35,22 +36,19 @@ const Intro = () => {
           </h3>
         </div>
         <div className="skill">
-          <h1>Key Technical Skills</h1>
-          <div className="skillCol">
-            <img src="https://i.ibb.co/sJ7fxv2/html.png" alt="" />
-            <img src="https://i.ibb.co/ZcVc2cW/css-3.png" alt="" />
-            <img src="https://i.ibb.co/BfsbD88/js.png" alt="" />
-          </div>
-          <div className="skillCol">
-            <img src="https://i.ibb.co/M70R2Nm/typescript.png" alt="" />
-            <img src="https://i.ibb.co/HdjCd9w/sass.png" alt="" />
-            <img src="https://i.ibb.co/Gn1ZxYG/tailwind.png" alt="" />
-          </div>
-          <div className="skillCol">
-            <img src="https://i.ibb.co/rft20TC/react.png" alt="" />
-            <img src="https://i.ibb.co/r4wSr0Y/nextjs.png" alt="" />
-            <img src="https://i.ibb.co/z6xP4zN/angular.png" alt="" />
-          </div>
+          <h2>My Services</h2>
+          <ul>
+            {services.map((item, key) => {
+              return (
+                <li key={key}>
+                  <span>{item}</span>
+                </li>
+              );
+            })}
+          </ul>
+          <a href="#contact">
+            <button>get in touch</button>
+          </a>
         </div>
       </div>
     </div>

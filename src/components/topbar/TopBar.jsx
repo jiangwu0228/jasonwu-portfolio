@@ -27,12 +27,12 @@ const TopBar = ({ menuOpen, setMenuOpen }) => {
         </div>
         <div className="right">
           <div className="link">
-            <a href="https://www.linkedin.com/in/jiang-wu-729450222/">
+            <a href="https://www.linkedin.com/in/jiang-wu-729450222/" target="_blank" rel="noopener noreferrer">
               <img src="assets/linkedin.png" alt="" />
             </a>
-            <a href="https://github.com/jiangwu0228">
+            {/* <a href="https://github.com/jiangwu0228" target="_blank" rel="noopener noreferrer">
               <img src="assets/github.png" alt="" />
-            </a>
+            </a> */}
           </div>
           <div className="toggle">
             {theme.state.darkTheme ? (
