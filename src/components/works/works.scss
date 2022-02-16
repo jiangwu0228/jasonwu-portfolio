@@ -11,26 +11,47 @@
     position: absolute;
     top: 10px;
     font-size: 50px;
-    
+
     @include mobile {
       font-size: 30px;
     }
   }
 
-  .skills{
+  .skills {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    img{
-      width: 100px;
-      height: 100px;
-      margin: 10px;
-    }
-    h2{
-      font-size: 20px;
-      margin: 10px;
+    .skill {
       text-align: center;
+      img {
+        width: 140px;
+        height: 140px;
+        margin: 14px;
+        @include mid-width {
+          width: 120px;
+          height: 120px;
+          margin: 12px;
+        }
+        @include mobile {
+          width: 100px;
+          height: 100px;
+          margin: 10px;
+        }
+      }
+      h2 {
+        font-size: 40px;
+        margin: 20px;
+        text-align: center;
+        @include mid-width {
+          font-size: 30px;
+          margin: 15px;
+        }
+        @include mobile {
+          font-size: 20px;
+          margin: 10px;
+        }
+      }
     }
   }
 

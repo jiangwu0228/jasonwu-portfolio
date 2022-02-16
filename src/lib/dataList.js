@@ -359,11 +359,11 @@ export const skillsImg = [
   // {name:'Firebase', img: 'https://i.ibb.co/BfsbD88/js.png'},
   
   {name:'HTML', img: "https://i.ibb.co/sJ7fxv2/html.png"},
-  {name:'Css', img: "https://i.ibb.co/ZcVc2cW/css-3.png"},
+  {name:'CSS', img: "https://i.ibb.co/ZcVc2cW/css-3.png"},
   {name:'JavaScript', img: "https://i.ibb.co/BfsbD88/js.png"},
   {name:'Typescript', img: 'https://i.ibb.co/M70R2Nm/typescript.png'},
   {name:'Sass', img: 'https://i.ibb.co/HdjCd9w/sass.png'},
-  {name:'Tailwind CSS', img: 'https://i.ibb.co/Gn1ZxYG/tailwind.png'},
+  {name:'Tailwind', img: 'https://i.ibb.co/Gn1ZxYG/tailwind.png'},
   {name:'React', img: 'https://i.ibb.co/rft20TC/react.png'},
   {name:'NextJS', img: 'https://i.ibb.co/r4wSr0Y/nextjs.png'},
   {name:'Angular', img: 'https://i.ibb.co/z6xP4zN/angular.png'},
