@@ -1,24 +1,34 @@
 import React, { useState, useContext } from "react";
 import "./works.scss";
-import { workData } from "../../lib/dataList";
+// import { workData } from "../../lib/dataList";
 import { ThemeContext } from "../../context";
+import { skillsImg } from "../../lib/dataList";
 
 const Works = () => {
   const theme = useContext(ThemeContext);
   const darkTheme = theme.state.darkTheme;
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const handleClick = (e) => {
-    e === "left"
-      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
-      : setCurrentSlide(
-          currentSlide < workData.length - 1 ? currentSlide + 1 : 0
-        );
-  };
+  // const [currentSlide, setCurrentSlide] = useState(0);
+  // const handleClick = (e) => {
+  //   e === "left"
+  //     ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
+  //     : setCurrentSlide(
+  //         currentSlide < workData.length - 1 ? currentSlide + 1 : 0
+  //       );
+  // };
 
   return (
     <div className={"works " + (darkTheme && "dark")} id="works">
       <h1>Skills</h1>
-      
+      <div className="skills">
+        {skillsImg.map((item, key) => {
+          return (
+            <div className="skill" key={key}>
+              <img src={item.img} alt="" />
+              <h2>{item.name}</h2>
+            </div>
+          );
+        })}
+      </div>
       {/* <div
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}

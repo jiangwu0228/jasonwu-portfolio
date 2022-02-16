@@ -19,204 +19,15 @@ export const skillCategory = [
   },
 ];
 
-export const featuredPortfolio = [
-  {
-    id: 1,
-    title: "Social Media App",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-  },
-  {
-    id: 2,
-    title: "Rampa UI Design",
-    img: "https://cdn.dribbble.com/users/702789/screenshots/15054318/media/4ea5d492b7b07eebc9528ff960794879.png?compress=1&resize=1200x900",
-  },
-  {
-    id: 3,
-    title: "E-commerce Web Design",
-    img: "https://cdn.dribbble.com/users/1387827/screenshots/15466426/media/deb2dca6762cd3610321c98bfccb0b72.png?compress=1&resize=1200x900",
-  },
-  {
-    id: 4,
-    title: "Relax Mobile App",
-    img: "https://cdn.dribbble.com/users/4095861/screenshots/15467417/media/d6a15c416626f12b31fa5ca1db192572.png?compress=1&resize=1200x900",
-  },
-  {
-    id: 5,
-    title: "Hero Web Design",
-    img: "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
-  },
-  {
-    id: 6,
-    title: "Banking App",
-    img: "https://cdn.dribbble.com/users/3307260/screenshots/15468444/media/447b4501f7a145b05e11c70199a9c417.jpg?compress=1&resize=1200x900",
-  },
-];
-
-export const webPortfolio = [
-  {
-    id: 1,
-    title: "Web Social Media App",
-    img: "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
-  },
-  {
-    id: 2,
-    title: "Web Rampa UI Design",
-    img: "https://cdn.dribbble.com/users/3967258/screenshots/15463803/media/4fddb9a2caf3b3bd634060f706a91e73.png?compress=1&resize=1200x900",
-  },
-  {
-    id: 3,
-    title: "Web E-commerce Design",
-    img: "https://cdn.dribbble.com/users/3637068/screenshots/15467010/media/69a3279182b75365013fe285733d1122.png?compress=1&resize=1200x900",
-  },
-  {
-    id: 4,
-    title: "Web Relax App",
-    img: "https://cdn.dribbble.com/users/2264844/screenshots/15463998/media/d85e92a332c41094f68e1f716884f7ce.jpg?compress=1&resize=1200x900",
-  },
-  {
-    id: 5,
-    title: "Web Design",
-    img: "https://cdn.dribbble.com/users/387658/screenshots/15458608/media/e92ec1dd33dd1170ae3dc9c5272f2693.jpg?compress=1&resize=1200x900",
-  },
-  {
-    id: 6,
-    title: "Web Banking App",
-    img: "https://cdn.dribbble.com/users/6384483/screenshots/15468426/media/ce9479fa1f8dba3a4a49840d76e55e31.png?compress=1&resize=1200x900",
-  },
-];
-
-export const mobilePortfolio = [
-  {
-    id: 1,
-    title: "Mobile Social Media App",
-    img: "https://cdn.dribbble.com/users/2597268/screenshots/15468893/media/44313553d73ba41580f1df69749bba28.jpg?compress=1&resize=1200x900",
-  },
-  {
-    id: 2,
-    title: "Mobile Rampa UI Design",
-    img: "https://cdn.dribbble.com/users/5920881/screenshots/15463142/media/b5a460223798bd85d835710806e2f3dd.png?compress=1&resize=1200x900",
-  },
-  {
-    id: 3,
-    title: "Mobile E-commerce Design",
-    img: "https://cdn.dribbble.com/users/1998175/screenshots/15459384/media/48ac2b43ebe81ba0866afea1383cc939.png?compress=1&resize=1200x900",
-  },
-  {
-    id: 4,
-    title: "Mobile Relax App",
-    img: "https://cdn.dribbble.com/users/2083704/screenshots/15468619/media/cd958306c7a772449e1ac23bd65ce506.png?compress=1&resize=1200x900",
-  },
-  {
-    id: 5,
-    title: "Mobile Hero Design",
-    img: "https://cdn.dribbble.com/users/26642/screenshots/15462545/media/1a202ef5c8338b6f78634e6edc1ba350.png?compress=1&resize=1200x900",
-  },
-  {
-    id: 6,
-    title: "Mobile Banking App",
-    img: "https://cdn.dribbble.com/users/1387827/screenshots/15466426/media/deb2dca6762cd3610321c98bfccb0b72.png?compress=1&resize=1200x900",
-  },
-];
-
-export const designPortfolio = [
-  {
-    id: 1,
-    title: "Design Social Media App",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-  },
-  {
-    id: 2,
-    title: "Design Rampa UI Design",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-  },
-  {
-    id: 3,
-    title: "Design E-commerce Web Design",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-  },
-  {
-    id: 4,
-    title: "Design Relax Mobile App",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-  },
-  {
-    id: 5,
-    title: "Design Keser Web Design",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-  },
-  {
-    id: 6,
-    title: "Design Banking App",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-  },
-];
-
-export const contentPortfolio = [
-  {
-    id: 1,
-    title: "Content Social Media App",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-  },
-  {
-    id: 2,
-    title: "Content Rampa UI Design",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-  },
-  {
-    id: 3,
-    title: "Content E-commerce Web Design",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-  },
-  {
-    id: 4,
-    title: "Content Relax Mobile App",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-  },
-  {
-    id: 5,
-    title: "Content Keser Web Design",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-  },
-  {
-    id: 6,
-    title: "Content Banking App",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-  },
-];
-
-export const workData = [
-  {
-    id: "1",
-    icon: "./assets/mobile.png",
-    title: "Web Developer",
-    desc: "There is a small business that needs a website for display and gets in touch for booking. The prototype is in process in Figma and has already bought a domain for the website.",
-    img: "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
-  },
-  {
-    id: "2",
-    icon: "./assets/globe.png",
-    title: "Web Developer",
-    desc: "The project is an application of clocking in and calculating working hours for employees. All web applications build with C# and angular. We use Bitbucket and Jira as project management. My role is to build an entry home page and some new features from Kanban Board.",
-    img: "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
-  },
-  {
-    id: "3",
-    icon: "./assets/writing.png",
-    title: "Web Developer",
-    desc: "The project is a Mini Program in WeChat but needed some web page as an introduction. My job is using HTML, CSS and bootstrap to build a single page web app and manage product data.",
-    img: "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
-  },
-];
-
 export const testimonialsData = [
   {
     id: 1,
     name: "Peter Yu",
-    title: "Joiner Developer",
+    title: "Junior Developer",
     url: "https://www.linkedin.com/in/jia-yu-8398861a3",
     img: "https://media-exp1.licdn.com/dms/image/C5603AQED1A10xVDNdQ/profile-displayphoto-shrink_800_800/0/1592102051126?e=1650499200&v=beta&t=97yX4zU4ahLmrfwl-onvtoECR_22Uz1U_L8pC765TOE",
     icon: "assets/linkedin.png",
-    desc: "He is punctual, hard-working and show initiative by seeking out solutions to problems. They are respectful of other colleagues and help others when required.",
+    desc: "He is punctual, hardworking, helpful and show initiative by seeking out solutions to problems. He is a good team player and always ready to learn new things and also respectful of other colleagues.",
   },
   {
     id: 2,
@@ -225,7 +36,7 @@ export const testimonialsData = [
     url: "https://www.linkedin.com/in/alex10168",
     img: "https://media-exp1.licdn.com/dms/image/C5603AQGksyXVdo4E0w/profile-displayphoto-shrink_800_800/0/1517495950332?e=1650499200&v=beta&t=rq9uxtPHrwEQ7ew8stOB9dvsx44Rm9DOGDHL511ADtE",
     icon: "assets/linkedin.png",
-    desc: "organized, thoughtful person who works well under pressure.",
+    desc: " organized, thoughtful person who works well under pressure. He is a very hardworking programmer who is passionate about learning new skills and takes every job seriously.",
     featured: true,
   },
   {
@@ -241,7 +52,7 @@ export const testimonialsData = [
 
 export const portFolioData = [
   {
-    id: 'facepainting',
+    id: "facepainting",
     title: "Face Painting Website",
     shortDesc: "This is a face painting website built with React",
     situation:
@@ -251,8 +62,7 @@ export const portFolioData = [
       "UI and prototype design in Figma.",
       "Data hosting in third party websites and start to build with React.",
     ],
-    result:
-      "Experience in the project from scratch and it’s still in process.",
+    result: "Experience in the project from scratch and it’s still in process.",
     img: "https://i.ibb.co/GvL7Qfd/auth.png",
     icon: "https://i.ibb.co/HdjCd9w/sass.png",
     url: " ",
@@ -267,7 +77,7 @@ export const portFolioData = [
     ],
   },
   {
-    id: 'gotime',
+    id: "gotime",
     title: "Go Time",
     shortDesc: "This is a clocking app built with Angular",
     situation:
@@ -293,7 +103,7 @@ export const portFolioData = [
     ],
   },
   {
-    id: 'portfolio',
+    id: "portfolio",
     title: "Portfolio Website",
     shortDesc: "This is a E-commerce app built with Vue.",
     situation:
@@ -303,8 +113,7 @@ export const portFolioData = [
       "I build a home page for projects with bootstrap.",
       "Manage backend product data as an administrator.",
     ],
-    result:
-      "Experience in HTML and CSS in responsive single page sites.",
+    result: "Experience in HTML and CSS in responsive single page sites.",
     img: "https://i.ibb.co/GvL7Qfd/auth.png",
     icon: "https://i.ibb.co/HdjCd9w/sass.png",
     url: "https://www.jasonwu.me",
@@ -319,7 +128,7 @@ export const portFolioData = [
     ],
   },
   {
-    id: 'portfolio',
+    id: "portfolio",
     title: "Portfolio Website",
     shortDesc: "This is a portfolio website built with React",
     situation:
@@ -348,7 +157,7 @@ export const portFolioData = [
     ],
   },
   {
-    id: 'cms',
+    id: "cms",
     title: "CMS",
     shortDesc: "This is a School CMS website built with NextJS",
     situation:
@@ -378,7 +187,7 @@ export const portFolioData = [
     ],
   },
   {
-    id: 'crogle',
+    id: "crogle",
     title: "Crogle",
     shortDesc: "This is a copy of google search website",
     situation: "I'm using google search API to build my search engine.",
@@ -398,7 +207,7 @@ export const portFolioData = [
     tech: ["react", "Tailwind css", "Rapid API", "react context", "npm"],
   },
   {
-    id: 'realestate',
+    id: "realestate",
     title: "Real Estate",
     shortDesc: "This is a real estate website built with React",
     situation:
@@ -418,7 +227,7 @@ export const portFolioData = [
     tech: ["NextJS", "Charkra-UI", "millify", "axios", "Rapid API", "npm"],
   },
   {
-    id: 'crypto',
+    id: "crypto",
     title: "Crypto",
     shortDesc: "This is a crypto website build with React",
     situation:
@@ -450,7 +259,7 @@ export const portFolioData = [
     ],
   },
   {
-    id: 'travel',
+    id: "travel",
     title: "Travel Advisor",
     shortDesc: "This is a travel advisor website with Google Maps API",
     situation:
@@ -470,7 +279,7 @@ export const portFolioData = [
     tech: ["React", "material-ui", "google map api", "npm", "axios", "lodash"],
   },
   {
-    id: 'restaurant',
+    id: "restaurant",
     title: "Restaurant cart",
     shortDesc: "This is a React learning demo",
     situation:
@@ -490,7 +299,7 @@ export const portFolioData = [
     tech: ["React", "Ant Design", "react-context", "npm"],
   },
   {
-    id: 'honkai',
+    id: "honkai",
     title: "Honkai Impact demo",
     shortDesc: "This is a NextJS learning project demo",
     situation:
@@ -510,7 +319,7 @@ export const portFolioData = [
     tech: ["NextJS", "mongodb", "npm"],
   },
   {
-    id: 'auth',
+    id: "auth",
     title: "Firebase auth demo with React",
     shortDesc: "This is a React and Firebase Learning demo",
     situation:
@@ -535,26 +344,29 @@ export const skills = [
   "https://i.ibb.co/sJ7fxv2/html.png",
   "https://i.ibb.co/ZcVc2cW/css-3.png",
   "https://i.ibb.co/BfsbD88/js.png",
-
   "https://i.ibb.co/M70R2Nm/typescript.png",
   "https://i.ibb.co/HdjCd9w/sass.png",
   "https://i.ibb.co/s3BZS0z/tailwindcss.png",
-
   "https://i.ibb.co/rft20TC/react.png",
   "https://i.ibb.co/YLnvyMT/nextjs.png",
   "https://i.ibb.co/8g02fQ0/angular.png",
 ];
 
 export const skillsImg = [
-  '<img src="https://i.ibb.co/sJ7fxv2/html.png" alt="" />',
-  '<img src="https://i.ibb.co/ZcVc2cW/css-3.png" alt="" />',
-  '<img src="https://i.ibb.co/BfsbD88/js.png" alt="" />',
-  '<img src="https://i.ibb.co/M70R2Nm/typescript.png" alt="" />',
-  '<img src="https://i.ibb.co/HdjCd9w/sass.png" alt="" />',
-  '<img src="https://i.ibb.co/Gn1ZxYG/tailwind.png" alt="" />',
-  '<img src="https://i.ibb.co/rft20TC/react.png" alt="" />',
-  '<img src="https://i.ibb.co/r4wSr0Y/nextjs.png" alt="" />',
-  '<img src="https://i.ibb.co/z6xP4zN/angular.png" alt="" />',
+  // {name:'NodeJS', img: 'https://i.ibb.co/s3BZS0z/tailwindcss.png'},
+  // {name:'Express', img: 'https://i.ibb.co/sJ7fxv2/html.png'},
+  // {name:'MongoDB', img: 'https://i.ibb.co/ZcVc2cW/css-3.png'},
+  // {name:'Firebase', img: 'https://i.ibb.co/BfsbD88/js.png'},
+  
+  {name:'HTML', img: "https://i.ibb.co/sJ7fxv2/html.png"},
+  {name:'Css', img: "https://i.ibb.co/ZcVc2cW/css-3.png"},
+  {name:'JavaScript', img: "https://i.ibb.co/BfsbD88/js.png"},
+  {name:'Typescript', img: 'https://i.ibb.co/M70R2Nm/typescript.png'},
+  {name:'Sass', img: 'https://i.ibb.co/HdjCd9w/sass.png'},
+  {name:'Tailwind CSS', img: 'https://i.ibb.co/Gn1ZxYG/tailwind.png'},
+  {name:'React', img: 'https://i.ibb.co/rft20TC/react.png'},
+  {name:'NextJS', img: 'https://i.ibb.co/r4wSr0Y/nextjs.png'},
+  {name:'Angular', img: 'https://i.ibb.co/z6xP4zN/angular.png'},
 ];
 
 export const services = [

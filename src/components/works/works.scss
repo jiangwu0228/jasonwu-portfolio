@@ -17,6 +17,23 @@
     }
   }
 
+  .skills{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    img{
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+    }
+    h2{
+      font-size: 20px;
+      margin: 10px;
+      text-align: center;
+    }
+  }
+
   .arrow {
     height: 70px;
     position: absolute;

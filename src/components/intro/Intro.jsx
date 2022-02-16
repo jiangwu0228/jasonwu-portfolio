@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useContext } from "react";
 import "./intro.scss";
 import { init } from "ityped";
 import { ThemeContext } from "../../context";
-import { services } from "../../lib/dataList";
 
 const Intro = () => {
   const theme = useContext(ThemeContext);
@@ -14,9 +13,11 @@ const Intro = () => {
       backDelay: 1000,
       backSpeed: 50,
       strings: [
-        "Frontend Developer",
-        "Web Developer",
-        // "Fullstack Developer",
+        "Enterprise website",
+        "E-commerce website",
+        "Responsive website",
+        "Custom development",
+        "Secondary development",
       ],
     });
   }, []);
@@ -31,23 +32,14 @@ const Intro = () => {
         <div className="wrapper">
           <h2>Hi There, I'm</h2>
           <h1>Jason Wu</h1>
-          <h3>
-            Freelance <span ref={textRef}></span>
-          </h3>
-        </div>
-        <div className="skill">
+          <h3>Freelance Web Developer</h3>
+          <br/>
           <h2>My Services</h2>
-          <ul>
-            {services.map((item, key) => {
-              return (
-                <li key={key}>
-                  <span>{item}</span>
-                </li>
-              );
-            })}
-          </ul>
+          <h3>
+            <span ref={textRef}></span>
+          </h3>
           <a href="#contact">
-            <button>get in touch</button>
+            <button>Get in touch now</button>
           </a>
         </div>
       </div>
