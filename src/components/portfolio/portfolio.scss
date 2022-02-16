@@ -20,6 +20,7 @@
     padding: 0;
     list-style: none;
     display: flex;
+    align-items: center;
 
     @include mobile {
       margin: 10px 0;
@@ -27,34 +28,17 @@
       justify-content: center;
     }
 
-    li {
+    .portfolioList {
       font-size: 14px;
-      margin-right: 50px;
+      margin: 0 10px 0 10px;
       padding: 7px;
       border-radius: 10px;
       cursor: pointer;
-
-      @include mobile {
-        margin-right: 20px;
-      }
 
       &.active {
         background-color: $mainColor;
         color: white;
       }
-    }
-  }
-
-  .portfolioList {
-    font-size: 14px;
-    margin-right: 50px;
-    padding: 7px;
-    border-radius: 10px;
-    cursor: pointer;
-
-    &.active {
-      background-color: $mainColor;
-      color: white;
     }
   }
 
