@@ -1,7 +1,10 @@
-@import 'global';
+@import "global";
 .app {
   height: 100vh;
-
+  &.dark {
+    background-color: $darkColor;
+    color: $darkFont;
+  }
 
   .sections {
     width: 100%;
@@ -18,11 +21,9 @@
       display: none;
     } //for chrome and safari
 
-    @include xl-width{
-      left:0
+    @include xl-width {
+      left: 0;
     }
-
-
 
     > * {
       // width: 100vw;

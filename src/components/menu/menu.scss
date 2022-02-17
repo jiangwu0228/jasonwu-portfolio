@@ -14,9 +14,20 @@
   justify-content: center;
   transition: all 0.3s ease-in-out;
 
+  @include mobile{
+    width: 100vw;
+    right: 0;
+    top: -100vh;
+    text-align: center;
+  }
+
   &.active {
     right: 0;
     background-color: $menuColor;
+
+    @include mobile {
+      top: 0;
+    }
   }
   ul {
     margin: 0;
