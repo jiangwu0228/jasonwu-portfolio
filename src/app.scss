@@ -1,8 +1,12 @@
+@import 'global';
 .app {
   height: 100vh;
 
+
   .sections {
     width: 100%;
+    left: calc(50vw - 640px);
+    max-width: 1280px;
     height: calc(100vh - 80px);
     background-color: white;
     position: relative;
@@ -14,8 +18,15 @@
       display: none;
     } //for chrome and safari
 
+    @include xl-width{
+      left:0
+    }
+
+
+
     > * {
-      width: 100vw;
+      // width: 100vw;
+      max-width: 1280px;
       height: calc(100vh - 70px);
       // scroll-snap-align: start;
     }

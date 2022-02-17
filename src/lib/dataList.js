@@ -53,7 +53,7 @@ export const testimonialsData = [
 export const portFolioData = [
   {
     id: "facepainting",
-    title: "Face Painting Website",
+    title: "Face Painting",
     shortDesc: "This is a face painting website built with React",
     situation:
       "There is a small business that needs a website for display and gets in touch for booking. The prototype is in process in Figma and has already bought a domain for the website.",
@@ -103,8 +103,8 @@ export const portFolioData = [
     ],
   },
   {
-    id: "portfolio",
-    title: "Portfolio Website",
+    id: "e-commerce",
+    title: "E-commerce",
     shortDesc: "This is a E-commerce app built with Vue.",
     situation:
       "The project is a Mini Program in WeChat but needed some web page as an introduction. ",
@@ -281,7 +281,7 @@ export const portFolioData = [
   {
     id: "restaurant",
     title: "Restaurant cart",
-    shortDesc: "This is a React learning demo",
+    shortDesc: "This is a React base restaurant shopping cart.",
     situation:
       "I was learning React and wanted to create a restaurant cart website to practice the project.",
     task: "Build a website to practice React hooks, components and so on.",
@@ -300,7 +300,7 @@ export const portFolioData = [
   },
   {
     id: "honkai",
-    title: "Honkai Impact demo",
+    title: "Honkai Impact",
     shortDesc: "This is a NextJS learning project demo",
     situation:
       "My future is build a website practicing NextJS with server side rendering with mongoDB.",
@@ -320,7 +320,7 @@ export const portFolioData = [
   },
   {
     id: "auth",
-    title: "Firebase auth demo with React",
+    title: "Firebase auth",
     shortDesc: "This is a React and Firebase Learning demo",
     situation:
       "I was learning React adn Firebase and wanted to create a demo to practice the project.",

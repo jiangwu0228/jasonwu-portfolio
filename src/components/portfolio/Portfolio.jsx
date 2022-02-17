@@ -12,6 +12,12 @@ import Button from "@mui/material/Button";
 import Link from "@mui/material/Link";
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
+import Paper from "@mui/material/Paper";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
+import { CardActionArea } from "@mui/material";
 
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
@@ -86,17 +92,41 @@ const Portfolio = () => {
       <div className="container">
         {data.map((item) => {
           return (
-            <div
-              className="item"
-              key={item.title}
+            // <Paper
+            //   elevation={5}
+            //   className="item"
+            //   key={item.title}
+            //   onClick={() => {
+            //     handleOpen();
+            //     setCurrent(item);
+            //   }}
+            // >
+            //   <img src={item.img} alt="" />
+            //   <h3>{item.title}</h3>
+            // </Paper>
+            <Card
               onClick={() => {
                 handleOpen();
                 setCurrent(item);
               }}
             >
-              <img src={item.img} alt="" />
-              <h3>{item.title}</h3>
-            </div>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  // height="140"
+                  image={item.img}
+                  alt={item.title}
+                />
+                <CardContent >
+                  <Typography gutterBottom variant="h5" component="div">
+                    {item.title}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {item.shortDesc}
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
           );
         })}
       </div>

@@ -14,7 +14,7 @@ $width: 768px;
   }
 }
 
-$mid-width: 896px;
+$mid-width: 966px;
 
 @mixin mid-width {
   @media (max-width: $mid-width) {
@@ -22,3 +22,18 @@ $mid-width: 896px;
   }
 }
 
+$large-width: 1024px;
+
+$xl-width: 1280px;
+@mixin xl-width {
+  @media (max-width: $xl-width) {
+    @content;
+  }
+}
+
+$xxl-width: 1623px;
+@mixin xxl-width {
+  @media (max-width: $xxl-width) {
+    @content;
+  }
+}
