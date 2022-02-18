@@ -22,7 +22,7 @@ const TopBar = ({ menuOpen, setMenuOpen }) => {
           </div>
           <div className="itemContainer">
             <Mail className="icon" />
-            <span> jasonwu@gmail.com</span>
+            <span> jasonwu0228@gmail.com</span>
           </div>
         </div>
         <div className="right">
