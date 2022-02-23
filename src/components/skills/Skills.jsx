@@ -1,16 +1,16 @@
 import React, { useState, useContext } from "react";
-import "./works.scss";
+import "./skills.scss";
 import { ThemeContext } from "../../context";
 import { skillsImg } from "../../lib/dataList";
 
-const Works = () => {
+const Skills = () => {
   const theme = useContext(ThemeContext);
   const darkTheme = theme.state.darkTheme;
 
   return (
-    <div className={"works " + (darkTheme && "dark")} id="works">
+    <div className={"skills " + (darkTheme && "dark")} id="skills">
       <h1>Skills</h1>
-      <div className="skills">
+      <div className="skills-container">
         {skillsImg.map((item, key) => {
           return (
             <div className="skill" key={key}>
@@ -24,4 +24,4 @@ const Works = () => {
   );
 };
 
-export default Works;
+export default Skills;

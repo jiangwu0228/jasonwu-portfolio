@@ -1,6 +1,6 @@
 import { Description } from "@material-ui/icons";
 
-export const skillCategory = [
+export const worksCategory = [
   {
     id: "all",
     title: "All",
@@ -50,7 +50,7 @@ export const testimonialsData = [
   },
 ];
 
-export const portFolioData = [
+export const worksData = [
   {
     id: "facepainting",
     title: "Face Painting",

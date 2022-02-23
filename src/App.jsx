@@ -2,9 +2,10 @@ import React, { useState, useContext } from "react";
 
 import TopBar from "./components/topbar/TopBar";
 import Intro from "./components/intro/Intro";
-import Portfolio from "./components/portfolio/Portfolio";
-import Works from "./components/works/Works";
+import Portfolio from "./components/portfolio/Works";
+import Skills from "./components/skills/Skills";
 import Testimonials from "./components/testimonials/Testimonials";
+import Works from "./components/portfolio/Works";
 import Contact from "./components/contact/Contact";
 import Menu from "./components/menu/Menu";
 import { ThemeContext } from "./context";
@@ -22,8 +23,8 @@ function App() {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
         <Intro />
+        <Skills />
         <Works />
-        <Portfolio />
         <Testimonials />
         <Contact />
       </div>

@@ -1,6 +1,6 @@
 @import "../../global.scss";
 
-.works {
+.skills {
   background-color: white;
   display: flex;
   align-items: center;
@@ -17,7 +17,7 @@
     }
   }
 
-  .skills {
+  .skills-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

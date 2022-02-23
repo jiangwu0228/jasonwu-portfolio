@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useContext, useRef } from "react";
-import "./portfolio.scss";
-import { skillCategory, portFolioData } from "../../lib/dataList";
+import "./works.scss";
+import { worksCategory, worksData } from "../../lib/dataList";
 import { ThemeContext } from "../../context";
-import PortfolioModal from "./portfoliomodal/PortfolioModal";
+import PortfolioModal from "./works/PortfolioModal";
 
 import Backdrop from "@mui/material/Backdrop";
 import Box from "@mui/material/Box";
@@ -25,7 +25,7 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 
-const Portfolio = () => {
+const Works = () => {
   const theme = useContext(ThemeContext);
   const darkTheme = theme.state.darkTheme;
   const [selected, setSelected] = useState("all");
@@ -55,31 +55,31 @@ const Portfolio = () => {
   useEffect(() => {
     switch (selected) {
       case "all":
-        setData(portFolioData);
+        setData(worksData);
         break;
       case "works":
-        setData(portFolioData.filter((item) => item.tag === "Works"));
+        setData(worksData.filter((item) => item.tag === "Works"));
         break;
       case "projects":
-        setData(portFolioData.filter((item) => item.tag === "Projects"));
+        setData(worksData.filter((item) => item.tag === "Projects"));
         break;
       case "demos":
-        setData(portFolioData.filter((item) => item.tag === "Demos"));
+        setData(worksData.filter((item) => item.tag === "Demos"));
         break;
       default:
-        setData(portFolioData);
+        setData(worksData);
     }
   }, [selected]);
 
   return (
-    <div className={"portfolio " + (darkTheme && "dark")} id="portfolio">
+    <div className={"works " + (darkTheme && "dark")} id="works">
       <h1>My Works</h1>
       <ul>
-        {skillCategory.map((item) => {
+        {worksCategory.map((item) => {
           return (
             <li
               className={
-                selected === item.id ? "portfolioList active" : "portfolioList"
+                selected === item.id ? "worksList active" : "worksList"
               }
               key={item.id}
               onClick={() => setSelected(item.id)}
@@ -117,7 +117,7 @@ const Portfolio = () => {
                   image={item.img}
                   alt={item.title}
                 />
-                <CardContent >
+                <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
                     {item.title}
                   </Typography>
@@ -152,7 +152,7 @@ const Portfolio = () => {
                   <div className="box-left">
                     <h3>Key Skills</h3>
                     {current.tech?.map((item) => {
-                      return <Chip size="small" label={item} style={{}} />;
+                      return <Chip size="small" label={item} />;
                     })}
                   </div>
                   <div className="box-right">
@@ -195,4 +195,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Works;

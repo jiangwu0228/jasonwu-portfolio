@@ -9,8 +9,8 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
       link: "#intro",
     },
     {
-      name: "Portfolio",
-      link: "#portfolio",
+      name: "Skills",
+      link: "#skills",
     },
     {
       name: "Works",
