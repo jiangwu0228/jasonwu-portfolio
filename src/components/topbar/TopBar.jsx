@@ -18,16 +18,24 @@ const TopBar = ({ menuOpen, setMenuOpen }) => {
           </a>
           <div className="itemContainer">
             <Person className="icon" />
-            <span>021 163 1412</span>
+            <a href="tel:0211631412">
+              <span>021 163 1412</span>
+            </a>
           </div>
           <div className="itemContainer">
             <Mail className="icon" />
-            <span> jasonwu0228@gmail.com</span>
+            <a href="mailto:jasonwu0228@gmail.com">
+              <span> jasonwu0228@gmail.com</span>
+            </a>
           </div>
         </div>
         <div className="right">
           <div className="link">
-            <a href="https://www.linkedin.com/in/jiang-wu-729450222/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/in/jiang-wu-729450222/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src="assets/linkedin.png" alt="" />
             </a>
             {/* <a href="https://github.com/jiangwu0228" target="_blank" rel="noopener noreferrer">
