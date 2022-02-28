@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<script>
+
+
+    // // Return the length of the longest word in the provided sentence.
+    // function findLongestWordLength(str) {
+    //     var words = str.split(' ');
+    //     var longest = 0;
+    //     // return words.reduce(function (longest, word) {
+    //     //     return Math.max(longest, word.length);
+    //     // }, longest);
+    //     return words.sort(function (a, b) {
+    //         return b.length - a.length;
+    //     })[0].length;
+    // }
+
+    // function largestOfFour(arr) {
+    //     var result = [];
+    //     for (var i = 0; i < arr.length; i++) {
+    //         result.push(arr[i].sort(function (a, b) {
+    //             return b - a;
+    //         })[0]);
+    //     }
+    //     return result;
+    // }
+
+    // largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+
+    // findLongestWordLength("The quick brown fox jumped over the lazy dog");
+
+    function repeatStringNumTimes(str, num) {
+        if (num > 0) {
+            let newStr = ''
+            for (let i = 0; i < num; i++)
+                newStr.concat(newStr, str)
+                console.log(newStr)
+            return newStr
+        }
+        else return ''
+    }
+
+    repeatStringNumTimes("abc", 3);
+    console.log('hello')
+
+</script>

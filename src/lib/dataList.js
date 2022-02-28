@@ -65,7 +65,7 @@ export const worksData = [
     result: "Experience in the project from scratch and it’s still in process.",
     img: "https://i.ibb.co/GvL7Qfd/auth.png",
     icon: "https://i.ibb.co/HdjCd9w/sass.png",
-    url: " ",
+    url: " https://www.happyfacepaint.com/ ",
     tag: "Works",
     tech: [
       "React",
