@@ -32,7 +32,7 @@ export const testimonialsData = [
   },
   {
     id: 2,
-    name: "Alex Zheng",
+    name: "Alex Zeng",
     title: "Senior Web Developer",
     url: "https://www.linkedin.com/in/alex10168",
     img: "https://media-exp1.licdn.com/dms/image/C5603AQGksyXVdo4E0w/profile-displayphoto-shrink_800_800/0/1517495950332?e=1650499200&v=beta&t=rq9uxtPHrwEQ7ew8stOB9dvsx44Rm9DOGDHL511ADtE",
